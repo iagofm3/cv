@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iago Fernández Martínez | IT Support Technician & Cybersecurity CV</title>
+  <meta name="description" content="CV interactivo y portfolio profesional de Iago Fernández Martínez — IT Support Technician especializado en Windows, Active Directory, Redes, Microsoft 365 y Ciberseguridad." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Iago Fernández Martínez — IT Support Technician & Cybersecurity CV" />
+  <meta property="og:description" content="Técnico Superior en Sistemas de Telecomunicaciones e Informática · Máster en Ciberseguridad · Soporte IT, Windows, Active Directory, Microsoft 365 y Redes." />
+  <meta property="og:image" content="avatar.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background decorative elements (hidden on print) -->
+  <div class="bg-glow bg-glow-1 no-print" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2 no-print" aria-hidden="true"></div>
+
+  <!-- Top Navigation / Action Bar (hidden on print) -->
+  <header class="topbar no-print">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-text">iago<span class="brand-accent">.it</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Secciones del CV">
+        <a href="#about" data-i18n="nav.about">Sobre mí</a>
+        <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+        <a href="#education" data-i18n="nav.education">Educación</a>
+        <a href="#skills" data-i18n="nav.skills">Aptitudes (31)</a>
+        <a href="#toolkit" data-i18n="nav.toolkit">Toolkit IT</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button id="langToggle" class="btn-icon-text" type="button" title="Cambiar idioma / Switch language">
+          <span class="lang-pill active" data-lang-indicator="es">ES</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-pill" data-lang-indicator="en">EN</span>
+        </button>
+
+        <button id="themeToggle" class="btn-icon" type="button" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button id="printBtn" class="btn-primary" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-i18n="nav.download">Descargar PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container main-content">
+    <!-- HERO / HEADER SECTION -->
+    <section class="hero-card">
+      <div class="hero-top">
+        <div class="avatar-wrapper">
+          <img
+            src="avatar.jpg"
+            alt="Iago Fernández Martínez"
+            class="avatar-img"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="avatar-placeholder" style="display: none;" aria-label="Iago Fernández Martínez">
+            <span>IF</span>
+          </div>
+          <span class="status-dot no-print" title="Open to Work"></span>
+        </div>
+
+        <div class="hero-info">
+          <div class="availability-badge no-print">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.badge">Open to Work · Presencial / Híbrido (Santiago de Compostela, Boqueijón y alrededores)</span>
+          </div>
+
+          <div class="hero-title-row">
+            <h1 class="hero-name">Iago Fernández Martínez</h1>
+            <span class="hero-pronouns no-print">He/Him</span>
+          </div>
+
+          <p class="hero-headline" data-i18n="hero.headline">
+            IT Support Technician | Windows | Active Directory | Networking | Cybersecurity Enthusiast
+          </p>
+
+          <div class="hero-meta">
+            <span class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="hero.location">Boqueijón / Santiago de Compostela, Galicia, España</span>
+            </span>
+
+            <a href="mailto:iagofm3@gmail.com" class="meta-item meta-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>iagofm3@gmail.com</span>
+            </a>
+
+            <a href="tel:+34640662962" class="meta-item meta-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+34 640 662 962</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/iago-fern%C3%A1ndez-mart%C3%ADnez/" target="_blank" rel="noopener noreferrer" class="meta-item meta-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>linkedin.com/in/iago-fernández-martínez</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick KPI / Focus Pillars (hidden on print for compactness) -->
+      <div class="hero-pillars no-print">
+        <div class="pillar-card">
+          <div class="pillar-icon">🖥️</div>
+          <div>
+            <h3 data-i18n="pillars.p1.title">Soporte IT Presencial & Remoto</h3>
+            <p data-i18n="pillars.p1.desc">Asistencia N1/N2 en Inforhouse, despliegue de equipos Windows 10/11, periféricos y ticketing.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🔐</div>
+          <div>
+            <h3 data-i18n="pillars.p2.title">Active Directory & M365</h3>
+            <p data-i18n="pillars.p2.desc">Administración de cuentas de usuario, permisos, directivas de grupo y Microsoft 365.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🌐</div>
+          <div>
+            <h3 data-i18n="pillars.p3.title">Redes y Telecomunicaciones</h3>
+            <p data-i18n="pillars.p3.desc">Técnico Superior STI (IES Politécnico) · Diagnóstico TCP/IP, DNS, Servidor DHCP, Wi-Fi y VPN.</p>
+          </div>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">🛡️</div>
+          <div>
+            <h3 data-i18n="pillars.p4.title">Máster en Ciberseguridad</h3>
+            <p data-i18n="pillars.p4.desc">Especialización actual en el IES San Clemente · Hardening, PowerShell y diagnóstico avanzado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="cv-section">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg class="section-icon no-print" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span data-i18n="about.title">Perfil Profesional</span>
+        </h2>
+      </div>
+      <div class="card about-card">
+        <p data-i18n="about.p1">
+          Técnico de Soporte IT con experiencia práctica proporcionando asistencia técnica en entornos empresariales. Titulado de Grado Superior en Sistemas de Telecomunicaciones e Informáticos (IES Politécnico de Santiago) y actualmente cursando el Máster en Ciberseguridad (IES San Clemente), con experiencia como Técnico IT dando soporte a usuarios, resolviendo incidencias técnicas y manteniendo infraestructura IT.
+        </p>
+        <p data-i18n="about.p2">
+          Apasionado por la tecnología y en continua mejora de mis competencias en administración de Windows, redes, Microsoft 365 y ciberseguridad. Disfruto resolviendo problemas técnicos, aprendiendo nuevas tecnologías y trabajando en equipo para ofrecer soluciones IT fiables.
+        </p>
+        <p data-i18n="about.p3">
+          Actualmente busco seguir creciendo profesionalmente en Soporte IT, Administración de Sistemas y Ciberseguridad, ampliando mis conocimientos mediante certificaciones profesionales y experiencia práctica.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="cv-section">
+      <div class="section-header section-header-flex">
+        <h2 class="section-title">
+          <svg class="section-icon no-print" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <span data-i18n="exp.title">Experiencia Profesional</span>
+        </h2>
+
+        <div class="filter-tabs no-print" role="tablist" aria-label="Filtrar experiencia">
+          <button class="filter-btn active" data-exp-filter="it" type="button" data-i18n="exp.filterIt">Sector IT (2)</button>
+          <button class="filter-btn" data-exp-filter="all" type="button" data-i18n="exp.filterAll">Trayectoria Completa (5)</button>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <!-- Job 1: Inforhouse IT Support Technician -->
+        <article class="timeline-item" data-exp-category="it">
+          <div class="timeline-marker"></div>
+          <div class="card timeline-card">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title" data-i18n="exp.job1.role">IT Support Technician (Técnico informático)</h3>
+                <div class="job-company">
+                  <span class="company-name">Inforhouse</span>
+                  <span class="job-badge" data-i18n="exp.job1.type">Contrato de formación</span>
+                </div>
+              </div>
+              <div class="job-meta">
+                <span class="job-date" data-i18n="exp.job1.date">jul. 2026 – sept. 2026 · 3 meses</span>
+                <span class="job-location" data-i18n="exp.job1.loc">Santiago de Compostela · Presencial</span>
+              </div>
+            </div>
+
+            <ul class="job-bullets">
+              <li data-i18n="exp.job1.b1">Proporcionar soporte técnico presencial (on-site) y remoto a usuarios finales.</li>
+              <li data-i18n="exp.job1.b2">Diagnosticar y resolver incidencias de hardware, software y sistemas operativos Windows.</li>
+              <li data-i18n="exp.job1.b3">Instalar, configurar y desplegar estaciones de trabajo (workstations) y equipos portátiles con Windows.</li>
+              <li data-i18n="exp.job1.b4">Configurar impresoras, escáneres y otros dispositivos periféricos.</li>
+              <li data-i18n="exp.job1.b5">Gestionar cuentas de usuario y permisos en Active Directory.</li>
+              <li data-i18n="exp.job1.b6">Dar soporte a los servicios de Microsoft 365 y a los usuarios finales.</li>
+              <li data-i18n="exp.job1.b7">Diagnosticar y solucionar problemas de conectividad de red (TCP/IP, DNS, DHCP, Wi-Fi y VPN).</li>
+              <li data-i18n="exp.job1.b8">Gestionar incidencias y peticiones de servicio mediante sistemas de ticketing.</li>
+              <li data-i18n="exp.job1.b9">Prestar asistencia técnica presencial a clientes empresariales cuando se requiere y colaborar con otros equipos IT para garantizar la resolución eficiente de incidencias técnicas.</li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag">Windows 11 / 10</span>
+              <span class="tag">Active Directory</span>
+              <span class="tag">Microsoft 365</span>
+              <span class="tag">PC Deployment</span>
+              <span class="tag">Ayuda al usuario a distancia</span>
+              <span class="tag">TCP/IP · DNS · DHCP · VPN</span>
+              <span class="tag">Resolución de problemas de hardware</span>
+              <span class="tag">Operating System Administration</span>
+              <span class="tag">Telecommunications Systems</span>
+              <span class="tag">Ticketing / Helpdesk</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Job 2: Inforhouse Técnico informático -->
+        <article class="timeline-item" data-exp-category="it">
+          <div class="timeline-marker"></div>
+          <div class="card timeline-card">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title" data-i18n="exp.job2.role">Técnico informático</h3>
+                <div class="job-company">
+                  <span class="company-name">Inforhouse</span>
+                  <span class="job-badge" data-i18n="exp.job2.type">Contrato de prácticas</span>
+                </div>
+              </div>
+              <div class="job-meta">
+                <span class="job-date" data-i18n="exp.job2.date">feb. 2026 – may. 2026 · 4 meses</span>
+                <span class="job-location" data-i18n="exp.job2.loc">Santiago de Compostela · Presencial</span>
+              </div>
+            </div>
+
+            <ul class="job-bullets">
+              <li data-i18n="exp.job2.b1">Proporcioné soporte técnico a usuarios finales en entorno empresarial (prácticas profesionales).</li>
+              <li data-i18n="exp.job2.b2">Instalé y configuré estaciones de trabajo Windows.</li>
+              <li data-i18n="exp.job2.b3">Diagnostiqué incidencias de hardware y software.</li>
+              <li data-i18n="exp.job2.b4">Asistí en la administración de servicios de Microsoft 365 y Active Directory.</li>
+              <li data-i18n="exp.job2.b5">Configuré impresoras y dispositivos periféricos.</li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag">Experiencia de Active Directory</span>
+              <span class="tag">Soporte técnico</span>
+              <span class="tag">Sistemas operativos</span>
+              <span class="tag">Microsoft 365</span>
+              <span class="tag">Organizational Capabilities</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Job 3: Alcampo (Non-IT, hidden by default unless "All" selected) -->
+        <article class="timeline-item is-hidden" data-exp-category="other">
+          <div class="timeline-marker timeline-marker-muted"></div>
+          <div class="card timeline-card timeline-card-compact">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title" data-i18n="exp.job3.role">Mozo de almacén</h3>
+                <div class="job-company">
+                  <span class="company-name">Alcampo</span>
+                  <span class="job-badge job-badge-muted" data-i18n="exp.job3.type">Jornada parcial</span>
+                </div>
+              </div>
+              <div class="job-meta">
+                <span class="job-date" data-i18n="exp.job3.date">jun. 2024 – sept. 2024 · 4 meses</span>
+              </div>
+            </div>
+            <p class="job-compact-desc" data-i18n="exp.job3.desc">Aptitudes: Capacidad organizativa (Organizational Capabilities) · Operaciones y logística.</p>
+          </div>
+        </article>
+
+        <!-- Job 4: Sicilia in Bocca -->
+        <article class="timeline-item is-hidden" data-exp-category="other">
+          <div class="timeline-marker timeline-marker-muted"></div>
+          <div class="card timeline-card timeline-card-compact">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title" data-i18n="exp.job4.role">Camarero</h3>
+                <div class="job-company">
+                  <span class="company-name">SICILIA IN BOCCA S.R.L.</span>
+                  <span class="job-badge job-badge-muted" data-i18n="exp.job4.type">Contrato temporal</span>
+                </div>
+              </div>
+              <div class="job-meta">
+                <span class="job-date" data-i18n="exp.job4.date">jun. 2024 · 1 mes</span>
+              </div>
+            </div>
+            <p class="job-compact-desc" data-i18n="exp.job4.desc">Aptitudes: Atención al cliente · Capacidad organizativa (Organizational Capabilities).</p>
+          </div>
+        </article>
+
+        <!-- Job 5: Polos Rivadulla -->
+        <article class="timeline-item is-hidden" data-exp-category="other">
+          <div class="timeline-marker timeline-marker-muted"></div>
+          <div class="card timeline-card timeline-card-compact">
+            <div class="job-header">
+              <div>
+                <h3 class="job-title" data-i18n="exp.job5.role">Operario de sala de despiece avícola</h3>
+                <div class="job-company">
+                  <span class="company-name">Polos Rivadulla S. L.</span>
+                  <span class="job-badge job-badge-muted" data-i18n="exp.job5.type">Jornada completa</span>
+                </div>
+              </div>
+              <div class="job-meta">
+                <span class="job-date" data-i18n="exp.job5.date">jun. 2021 – sept. 2021 · 4 meses</span>
+              </div>
+            </div>
+            <p class="job-compact-desc" data-i18n="exp.job5.desc">Aptitudes: Capacidad organizativa (Organizational Capabilities) · Producción en planta.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION & LANGUAGES GRID -->
+    <div class="two-col-grid" id="education">
+      <!-- Education (All 3 real entries from LinkedIn) -->
+      <section class="cv-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon no-print" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <span data-i18n="edu.title">Educación Académica</span>
+          </h2>
+        </div>
+
+        <div class="card edu-card">
+          <!-- Education 1: Master in Cybersecurity -->
+          <div class="edu-item">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-degree" data-i18n="edu.d1.title">Máster en Ciberseguridad (Curso de Especialización)</h3>
+                <span class="edu-school">IES San Clemente · Santiago de Compostela</span>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-date" data-i18n="edu.d1.date">sept. 2026 – Actualidad</span>
+                <span class="edu-badge-active" data-i18n="edu.d1.status">En curso</span>
+              </div>
+            </div>
+            <p class="edu-desc" data-i18n="edu.d1.desc">
+              Especialización en seguridad de sistemas y redes, fortificación (hardening), análisis de incidentes y protección de infraestructuras TI.
+            </p>
+          </div>
+
+          <div class="edu-divider"></div>
+
+          <!-- Education 2: CFGS Sistemas de Telecomunicaciones e Informáticos -->
+          <div class="edu-item">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-degree" data-i18n="edu.d2.title">Ciclo Formativo de Grado Superior (CFGS) en Sistemas de Telecomunicaciones e Informáticos</h3>
+                <span class="edu-school">IES Politécnico de Santiago</span>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-date" data-i18n="edu.d2.date">sept. 2024 – jun. 2026</span>
+              </div>
+            </div>
+            <p class="edu-desc" data-i18n="edu.d2.desc">
+              Higher Vocational Diploma in Telecommunications and IT Systems. Administración de sistemas operativos, redes TCP/IP, servidores DHCP, gestión de DNS, VPN, despliegue de PCs, resolución de problemas de hardware y sistemas de telecomunicaciones.
+            </p>
+          </div>
+
+          <div class="edu-divider"></div>
+
+          <!-- Education 3: CFGS ASIR -->
+          <div class="edu-item">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-degree" data-i18n="edu.d3.title">CFGS en Administración de Sistemas Informáticos en Red (ASIR)</h3>
+                <span class="edu-school">IES San Clemente · Santiago de Compostela</span>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-date" data-i18n="edu.d3.date">sept. 2022 – jun. 2023</span>
+                <span class="edu-note" data-i18n="edu.d3.note">Cursado solo un año</span>
+              </div>
+            </div>
+            <p class="edu-desc" data-i18n="edu.d3.desc">
+              Network and System Administration. Fundamentos de administración de sistemas operativos, servidores DHCP, redes VPN, hardware informático y ofimática (Microsoft Office / LibreOffice).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Languages (All 4 languages from LinkedIn) & Soft Skills -->
+      <section class="cv-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <svg class="section-icon no-print" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span data-i18n="lang.title">Idiomas y Competencias Transversales</span>
+          </h2>
+        </div>
+
+        <div class="card edu-card">
+          <div class="lang-list">
+            <div class="lang-row">
+              <div class="lang-info">
+                <strong data-i18n="lang.es">Español</strong>
+                <span data-i18n="lang.native">Competencia bilingüe o nativa</span>
+              </div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+            </div>
+
+            <div class="lang-row">
+              <div class="lang-info">
+                <strong data-i18n="lang.gl">Gallego</strong>
+                <span data-i18n="lang.native2">Competencia bilingüe o nativa</span>
+              </div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
+            </div>
+
+            <div class="lang-row">
+              <div class="lang-info">
+                <strong data-i18n="lang.en">Inglés</strong>
+                <span data-i18n="lang.enLevel">Competencia básica profesional</span>
+              </div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 65%"></div></div>
+            </div>
+
+            <div class="lang-row">
+              <div class="lang-info">
+                <strong data-i18n="lang.pt">Portugués</strong>
+                <span data-i18n="lang.ptLevel">Competencia básica limitada</span>
+              </div>
+              <div class="lang-bar"><div class="lang-fill" style="width: 45%"></div></div>
+            </div>
+          </div>
+
+          <div class="edu-divider"></div>
+
+          <h3 class="soft-title" data-i18n="soft.title">Competencias Transversales (LinkedIn)</h3>
+          <div class="tag-list">
+            <span class="tag" data-i18n="soft.s1">Capacidad organizativa (Organizational Capabilities)</span>
+            <span class="tag" data-i18n="soft.s2">Trabajo en equipo (Teamwork)</span>
+            <span class="tag" data-i18n="soft.s3">Comunicación efectiva (Communication)</span>
+            <span class="tag" data-i18n="soft.s4">Atención al cliente (Customer Service)</span>
+            <span class="tag" data-i18n="soft.s5">Competencia tecnológica (Technological Proficiency)</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SKILLS SECTION (All 31 LinkedIn Skills + Technical Stack) -->
+    <section id="skills" class="cv-section">
+      <div class="section-header section-header-flex">
+        <h2 class="section-title">
+          <svg class="section-icon no-print" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <span data-i18n="skills.title">Aptitudes y Competencias Técnicas (31 Aptitudes validadas)</span>
+        </h2>
+
+        <div class="filter-tabs no-print" role="tablist" aria-label="Filtrar habilidades">
+          <button class="skill-filter-btn active" data-skill-filter="all" type="button" data-i18n="skills.fAll">Todas</button>
+          <button class="skill-filter-btn" data-skill-filter="sys" type="button" data-i18n="skills.fSys">Sistemas & AD</button>
+          <button class="skill-filter-btn" data-skill-filter="net" type="button" data-i18n="skills.fNet">Redes & Telecom</button>
+          <button class="skill-filter-btn" data-skill-filter="hw" type="button" data-i18n="skills.fHw">Soporte & Hardware</button>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1: Systems & Directory -->
+        <div class="card skill-card" data-skill-category="sys">
+          <h3 class="skill-card-title">
+            <span class="skill-dot sys-dot"></span>
+            <span data-i18n="skills.c1.title">Administración de Sistemas, AD y Ofimática</span>
+          </h3>
+          <div class="skill-items">
+            <div class="skill-chip">Windows 11 / Windows 10</div>
+            <div class="skill-chip">Operating System Administration</div>
+            <div class="skill-chip">Active Directory (Usuarios, Grupos y Permisos)</div>
+            <div class="skill-chip">Microsoft 365 Admin</div>
+            <div class="skill-chip">PowerShell & Automatización</div>
+            <div class="skill-chip">Directivas de Grupo (gpedit.msc / lusrmgr.msc)</div>
+            <div class="skill-chip">Visor de Eventos (eventvwr.msc) & Servicios</div>
+            <div class="skill-chip">Microsoft Office & LibreOffice</div>
+          </div>
+        </div>
+
+        <!-- Category 2: Networking, Telecom & Security -->
+        <div class="card skill-card" data-skill-category="net">
+          <h3 class="skill-card-title">
+            <span class="skill-dot net-dot"></span>
+            <span data-i18n="skills.c2.title">Redes, Telecomunicaciones y Ciberseguridad</span>
+          </h3>
+          <div class="skill-items">
+            <div class="skill-chip">Conjunto de protocolo de Internet (TCP/IP)</div>
+            <div class="skill-chip">Gestión de DNS (A, AAAA, CNAME, MX, TXT, PTR)</div>
+            <div class="skill-chip">Servidor DHCP</div>
+            <div class="skill-chip">Red privada virtual (VPN)</div>
+            <div class="skill-chip">Networking & Wi-Fi Empresarial</div>
+            <div class="skill-chip">Telecommunications Systems (ICT)</div>
+            <div class="skill-chip">Ciberseguridad & Hardening de Sistemas</div>
+          </div>
+        </div>
+
+        <!-- Category 3: Hardware, Deployment & Support -->
+        <div class="card skill-card" data-skill-category="hw">
+          <h3 class="skill-card-title">
+            <span class="skill-dot hw-dot"></span>
+            <span data-i18n="skills.c3.title">Soporte Técnico, Despliegue y Hardware</span>
+          </h3>
+          <div class="skill-items">
+            <div class="skill-chip">Soporte técnico (On-site & Helpdesk)</div>
+            <div class="skill-chip">Ayuda al usuario a distancia (Soporte Remoto)</div>
+            <div class="skill-chip">PC Deployment (Maquetación y Despliegue)</div>
+            <div class="skill-chip">Resolución de problemas de hardware informático</div>
+            <div class="skill-chip">Sistemas de Ticketing & Gestión de Incidencias</div>
+            <div class="skill-chip">Impresoras, Escáneres y Periféricos</div>
+            <div class="skill-chip">Diagnóstico (MemTest86+, CrystalDiskInfo, HWiNFO, BlueScreenView)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE IT TOOLKIT SECTION (Web-only feature inspired by his 6 LinkedIn shared posts) -->
+    <section id="toolkit" class="cv-section no-print">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span data-i18n="toolkit.title">Kit de Diagnóstico y Administración IT (Destacado en LinkedIn)</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="toolkit.subtitle">
+          Herramientas y comandos técnicos de administración de sistemas, diagnóstico de hardware y redes compartidos en mi actividad de LinkedIn.
+        </p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="t-dot t-red"></span>
+            <span class="t-dot t-yellow"></span>
+            <span class="t-dot t-green"></span>
+          </div>
+          <div class="terminal-tabs" role="tablist">
+            <button class="t-tab active" data-tab="ps" type="button">PowerShell Admin</button>
+            <button class="t-tab" data-tab="msc" type="button">Consolas Windows (Win+R)</button>
+            <button class="t-tab" data-tab="hw" type="button">Diagnóstico Hardware</button>
+            <button class="t-tab" data-tab="dns" type="button">Red &amp; DNS</button>
+          </div>
+        </div>
+
+        <div class="terminal-body">
+          <!-- Tab 1: PowerShell -->
+          <div class="t-pane active" id="pane-ps">
+            <div class="cmd-grid">
+              <div class="cmd-item">
+                <code>Get-ComputerInfo &amp; Get-Uptime</code>
+                <span data-i18n="toolkit.ps.c1">Información detallada del SO, BIOS, hardware y tiempo de actividad.</span>
+              </div>
+              <div class="cmd-item">
+                <code>Get-NetIPAddress &amp; Get-NetAdapter</code>
+                <span data-i18n="toolkit.ps.c2">Estado de interfaces de red físicas/virtuales y direccionamiento IP.</span>
+              </div>
+              <div class="cmd-item">
+                <code>Get-LocalUser &amp; Get-LocalGroupMember Administrators</code>
+                <span data-i18n="toolkit.ps.c3">Auditoría de cuentas locales y permisos de administrador.</span>
+              </div>
+              <div class="cmd-item">
+                <code>Get-Service &amp; Get-Process</code>
+                <span data-i18n="toolkit.ps.c4">Verificación de servicios críticos y consumo de procesos activos.</span>
+              </div>
+              <div class="cmd-item">
+                <code>Get-HotFix</code>
+                <span data-i18n="toolkit.ps.c5">Control de parches y actualizaciones de seguridad instaladas (KB).</span>
+              </div>
+              <div class="cmd-item">
+                <code>Get-Volume</code>
+                <span data-i18n="toolkit.ps.c6">Salud de particiones, sistema de archivos y almacenamiento disponible.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Windows MSC/CPL -->
+          <div class="t-pane" id="pane-msc">
+            <div class="cmd-grid">
+              <div class="cmd-item">
+                <code>ncpa.cpl</code>
+                <span data-i18n="toolkit.msc.c1">Acceso directo a conexiones y adaptadores de red.</span>
+              </div>
+              <div class="cmd-item">
+                <code>eventvwr.msc &amp; compmgmt.msc</code>
+                <span data-i18n="toolkit.msc.c2">Visor de eventos y Administración de equipos para diagnóstico del sistema.</span>
+              </div>
+              <div class="cmd-item">
+                <code>lusrmgr.msc &amp; gpedit.msc</code>
+                <span data-i18n="toolkit.msc.c3">Gestión de usuarios/grupos locales y Editor de directivas de grupo.</span>
+              </div>
+              <div class="cmd-item">
+                <code>diskmgmt.msc</code>
+                <span data-i18n="toolkit.msc.c4">Administración de discos, volúmenes, particiones y Sensor de almacenamiento.</span>
+              </div>
+              <div class="cmd-item">
+                <code>devmgmt.msc &amp; services.msc</code>
+                <span data-i18n="toolkit.msc.c5">Administrador de dispositivos (drivers) y consola de servicios de Windows.</span>
+              </div>
+              <div class="cmd-item">
+                <code>appwiz.cpl &amp; control printers</code>
+                <span data-i18n="toolkit.msc.c6">Gestión rápida de programas instalados, escáneres y colas de impresión.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Hardware Diagnostics -->
+          <div class="t-pane" id="pane-hw">
+            <div class="cmd-grid">
+              <div class="cmd-item">
+                <code>MemTest86+</code>
+                <span data-i18n="toolkit.hw.c1">Diagnóstico de memoria RAM fuera del SO para aislar bloqueos y corrupción.</span>
+              </div>
+              <div class="cmd-item">
+                <code>CrystalDiskInfo &amp; GSmartControl</code>
+                <span data-i18n="toolkit.hw.c2">Lectura de atributos S.M.A.R.T. y salud en unidades SSD/NVMe/HDD.</span>
+              </div>
+              <div class="cmd-item">
+                <code>BlueScreenView</code>
+                <span data-i18n="toolkit.hw.c3">Análisis de archivos MiniDump tras pantallazos azules (BSOD).</span>
+              </div>
+              <div class="cmd-item">
+                <code>HWiNFO &amp; CPU-Z</code>
+                <span data-i18n="toolkit.hw.c4">Monitorización de sensores térmicos, voltajes, BIOS y frecuencias.</span>
+              </div>
+              <div class="cmd-item">
+                <code>OCCT</code>
+                <span data-i18n="toolkit.hw.c5">Pruebas de estrés de estabilidad para CPU, GPU y fuente de alimentación.</span>
+              </div>
+              <div class="cmd-item">
+                <code>CrystalDiskMark</code>
+                <span data-i18n="toolkit.hw.c6">Auditoría de tasas de lectura/escritura ante cuellos de botella de disco.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Network & DNS -->
+          <div class="t-pane" id="pane-dns">
+            <div class="cmd-grid">
+              <div class="cmd-item">
+                <code>ipconfig /all &amp;&amp; ipconfig /flushdns</code>
+                <span data-i18n="toolkit.dns.c1">Inspección completa de red y vaciado de caché de resolución DNS.</span>
+              </div>
+              <div class="cmd-item">
+                <code>nslookup / Resolve-DnsName</code>
+                <span data-i18n="toolkit.dns.c2">Verificación de registros DNS (A, AAAA, CNAME, MX, NS, TXT, PTR).</span>
+              </div>
+              <div class="cmd-item">
+                <code>ping, tracert, netsh &amp; arp -a</code>
+                <span data-i18n="toolkit.dns.c3">Diagnóstico de enrutamiento, tabla ARP, latencia y pila TCP/IP.</span>
+              </div>
+              <div class="cmd-item">
+                <code>Puerto 53 (UDP / TCP)</code>
+                <span data-i18n="toolkit.dns.c4">Consultas DNS recursivas e iterativas y verificación de cortafuegos.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (hidden on print) -->
+  <footer class="footer no-print">
+    <div class="container footer-inner">
+      <p>
+        <strong>Iago Fernández Martínez</strong> · <a href="mailto:iagofm3@gmail.com">iagofm3@gmail.com</a> · <a href="tel:+34640662962">+34 640 662 962</a>
+      </p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/iago-fern%C3%A1ndez-mart%C3%ADnez/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>·</span>
+        <button id="footerPrintBtn" class="link-btn" type="button" data-i18n="nav.download">Descargar PDF</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
